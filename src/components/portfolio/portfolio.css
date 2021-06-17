@@ -1,0 +1,83 @@
+.portfolio{
+    background-color: rgba(247, 244, 239, 0.885);
+    text-align: center;
+    font-size: 25px;
+    position: relative;
+}
+
+.portfolio ,h2{
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+
+.portfolio ul{
+    display: flex;
+    list-style: none;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
+    position: absolute;
+    right: 70px;
+    margin-right: 140px;
+}
+
+li{
+    padding: 5px;
+    margin-left: 10px;
+    color: black;
+    margin-left: 20px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+   
+}
+
+
+.active{
+    background-color: rgb(160, 140, 140);
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+div .container{
+    /* background-color: rgb(236, 236, 216); */
+    /* display: flex; */ 
+    /* margin-top: 100px; */
+    /* padding: 10px; */
+    /* align-items: center; */
+    /* flex-wrap: wrap; */
+    /* justify-content: space-around; */
+    /* border-radius: 5px; */
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 100px;
+    grid-gap: 20px 20px ;
+    
+
+}
+
+.container div{
+    /* background-color: wheat; */
+    height: 300px;
+    border-radius: 5px; 
+    width:360px;
+    padding: 15px;
+    box-shadow: 1px 4px 10px 0px rgb(179, 156, 156);
+}
+
+.container div:hover{
+    padding: 10px;
+    transition: 1s;
+    width: 350px;
+    box-shadow: 8px 7px 12px 1px rgb(172, 120, 120);
+    background-color: rgb(77, 55, 55);
+  color: aliceblue;
+   
+}
+
+.porto-img{
+    border-radius: 5px;
+    width: 200px;
+}

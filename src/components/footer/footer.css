@@ -1,0 +1,9 @@
+.footer{
+    background-color: rgb(10, 17, 44);
+}
+
+.footer .footer-container{
+    width: 100%;
+    height: 150px;
+    background-color: rgb(10, 17, 44);
+}
