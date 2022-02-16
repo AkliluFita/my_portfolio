@@ -1,62 +1,130 @@
-.contact{
-    background-color: rgba(247, 244, 239, 0.885);
-    padding: 20px;
+.contact {
+    height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    
-
-}
-
-.contact .contact-containers{
-    width: 95%;
+    font-weight: 200;
+    justify-content: space-around;
+  }
+  
+  .c_left {
+    flex: 1;
     height: 80%;
-    display: grid;
-    grid-template-columns: auto auto;
-    padding: 10px;
-    grid-column-gap: 10px;
+    padding: 20px;
+  }
+  
+  .left_container {
+    padding: 20px;
+    /* margin: 20px; */
+    height: 70vh;
+    border-radius: 7px;
+  }
+  
+  .address_title {
+    font-size: 25px;
+  }
+  
+  .address_list {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(236, 230, 220);
+    padding-left: 10px;
     border-radius: 5px;
-}
-
-.main-contact-title{
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-}
-
-.contact-container .cnt-item{
-    /* border: solid black 1px; */
-    border-radius: 5px;
-   
-
-}
-
-.cnt-left{
-    padding: 50px;
-    background-color: rgb(224, 239, 241);
-}
-
-.cnt-item .contact-main .contact-title{
+  }
+  
+  .item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon {
+    margin-right: 15px;
+    color: rgb(88, 51, 224);
+    width: 30px;
+  }
+  
+  /* right side */
+  .c_right {
+    flex: 1;
+    /* border: rgb(238, 216, 216) 1px solid; */
+    padding: 20px;
+  }
+  
+  .right_container {
+    background-color: rgb(236, 230, 220);
+    padding: 20px;
+    /* margin: 20px; */
+    height: 80vh;
+    width: 80%;
+    border-radius: 7px;
     text-align: center;
-    padding: 7px;
-    background-color: rgb(147, 157, 175);
-    
-        font-family: Alike Angular, serif;
-        font-size: 16px;
-        font-weight: 500;
-        color: rgba(0, 0, 0, 1);
-        text-transform: capitalize;
-        font-style: normal;
-        text-decoration: none;
-        line-height: 0em;
-        letter-spacing: 0.8px;
-        text-shadow: 0px 0px 0px rgba(0, 0, 0, 1);
-    
-}
-
-.cnt-item .contact-main .contact-form{
+  }
+  
+  .form_control {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+  }
+  
+  input {
+    height: 30px;
+    margin-top: 10px;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+  }
+  
+  textarea {
+    margin-top: 10px;
+  }
+  
+  button {
+    width: 100px;
+    height: 25px;
+    padding: 5px;
     margin-top: 15px;
-}
+    background-color: rgb(236, 245, 244);
+    border: none;
+    border-radius: 4px;
+  }
 
-textarea{
-    height: 200px;
-}
+  button{
+    padding: 2px;
+    background-color: aqua;
+  }
+  
+  .alart_sucess {
+    color: aqua;
+  }
+  
+  @media screen and (max-width: 480px) {
+    .contact {
+      flex-direction: column;
+      text-align: center;
+      justify-content: space-around;
+    }
+  
+    .c_left {
+      padding: 10px;
+      height: 35%;
+    }
+  
+    .left_container {
+      padding: 10px;
+      margin-top: 20px;
+
+    }
+  
+    .c_right {
+      padding: 10px;
+      width: 100%;
+    }
+  
+    .right_container {
+      width: 100%;
+      height: 70vh;
+    }
+
+  }
+  

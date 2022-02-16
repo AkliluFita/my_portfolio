@@ -1,0 +1,97 @@
+.products{
+    height: 100vh;
+    background-color: rgba(247, 244, 239, 0.885);
+    /* padding: 10px; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    font-weight: 200;
+
+}
+
+.pro-container{
+    width: 95%;
+    height: 25em;
+    display: flex;
+
+}
+
+.item-title{
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    background-color: rgb(236, 230, 220);
+    background-color: ;
+}
+
+.pro-item{
+    background-color: rgb(236, 245, 244);
+    border-radius: 7px;
+    box-shadow: 4px 5px 3px 1px rgba(191, 194, 182, 0.96);
+    padding: 5px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    
+}
+
+.pro-item:hover{
+    transition: 1s;
+    transform: scale(1.1);
+   
+}
+
+.contents:hover{
+font-size: 18px;
+transition: 1s;
+color: rgb(107, 18, 18);
+background-color: aliceblue;
+opacity: 0.5;
+border: 1px solid rgb(199, 146, 146);
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* border-radius: 30px; */
+    margin-top: 20px;
+    margin-top: 50px;  
+}
+
+
+/* ...................... */
+@media screen and (max-width: 480px) {
+   
+    .pro-container{
+        flex-direction: column;
+        /* height: 300px; */
+        align-items: center;
+        align-content: center;
+        padding: 7px;
+       
+    }
+    .pro-item{
+        margin-bottom: 10px;
+        width: 100%;
+        height: 230px;
+        
+    }
+    .item-title{
+        flex: 1;
+    }
+    .item-img{
+        flex: 2;
+    }
+    .item-contents{
+        flex: 2;
+    }
+    /* .item-title{
+        display: none;
+    } */
+    .item-contents{
+        margin-bottom: 100px;
+    }
+
+}

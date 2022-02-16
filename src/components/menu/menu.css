@@ -1,7 +1,7 @@
 .menu{
-    background-color: rgb(57, 54, 59);
+    background-color: rgb(128, 141, 194);;
     height:300px;
-    margin-top: 92px;
+    margin-top: 70px;
     position: fixed;
     top: 0;
     right: 0;
@@ -13,19 +13,20 @@
 
 .menu ul{
   transition: 1.5s;
+  text-align: center;
 }
 
 .menu li{
     list-style: none;
     text-align: center;
-    border-bottom: rgb(7, 41, 41) 1px solid;
+    border-bottom: rgb(200, 221, 221) 1px solid;
     padding: 7px;
     margin-top: 10px;
     
 }
 
 .menu li:hover{
-    background-color: rgb(128, 122, 129);
+    /* background-color: rgb(128, 122, 129); */
     transition: 1s;
 }
 

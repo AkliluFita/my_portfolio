@@ -1,54 +1,81 @@
 .topbar{
    width: 100%;
-   height: 70px;
-    background-color: rgb(10, 17, 44);
+   height: 65px;
+   display: flex;
+   justify-content: space-between;
+    background-color: rgb(128, 141, 194);
     position: fixed;
     top: 0;
     z-index: 2;
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    border-radius: 7px;
+    border-radius: 5px;
     color: white;
     
 }
-
-.topbar .left-bar{
-    /* border: 1px solid blueviolet; */
-    width: 1000px;
+.left-bar{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: rgb(53, 133, 170);
+    color:white;
     /* transition: .5s; */
     
 }
-.topbar .left-bar:hover{
-    color: rgb(154, 184, 197);
+.left-bar:hover{
+    color: rgb(14, 56, 75);
     /* transition: .5s; */
 }
 
 
-.left-bar .logo{
+.logo{
     font-size: 25px;
     color: rgb(129, 105, 105);
     /* transition: 2s; */
 }
-.left-bar .logo:hover{
+.logo:hover{
     color: rgb(182, 117, 117);
 }
 
 .right-bar{
-    /* border: 1px solid black; */
+    display: flex;
     width: 40px;
     padding: 5px;
     margin-right: 10px;
+    display: flex;
+    text-align: end;
 }
-.right-bar .hamburger{
+.hamburger{
     width: 100%;
     height: 3px;
     font-size: 35px;
 
 }
 
+/* ******************* */
 
+@media screen and (max-width: 880px) {
+    .addr{
+        display: none;
+    }
+
+  }
+
+  /*  */
+@media screen and (max-width: 480px) {
+    .topbar {
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .addr{
+        display: none;
+    }
+    .right-bar{
+        flex: 1;
+    }
+    .left-bar{
+        flex: 1;
+    }
+.right-bar .hamburger{
+    align-content: flex-start;
+
+}
+  }

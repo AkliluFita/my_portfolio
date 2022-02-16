@@ -1,22 +1,24 @@
 .intro{
+    height: 100vh;
     background-color: rgba(247, 244, 239, 0.885);
     display: flex;
-    flex-direction: row;
     background-image: url('../../img_container/b1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    /* border: ; */
+    box-sizing: border-box;
+    font-weight: 200;
+  
 }
 
-.intro .intro-left{
-    flex: 0.7;
-}
-.intro .intro-right{
-  flex: 0.3;
+/* left style */
+.intro-left{
+    flex: 1;
+    /* border: 1px solid rgb(226, 206, 206); */
+    border-radius: 10px;
 }
 
-div .intro-left .imgContainer{
+.imgContainer{
 
     padding: 10px;
     width: 90%;
@@ -24,38 +26,21 @@ div .intro-left .imgContainer{
     margin: 20px;
     background-color: burlywood;
     border-radius: 50%;
-    background-image: url('../../img_container/abdu.jpg');
+    background-image: url('../../img_container/myPhoto.jpg');
     transition: 1.5s;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     /* border: rgb(204, 54, 54) 3px solid; */
-     clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
-
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+  
+     transition: 1.5s; 
 }
 
-div .intro-left .imgContainer:hover{
-    background-image: url('../../img_container/abdu.jpg');
-    transition: 1.5s; 
-}
-
-.my_img{
-  border-radius: 50%;
-  border: solid 1p black;
-  transition: 1s;
-  width: 100px;
-}
-
-img:hover{
-    width: 300px;
-    transition: 1s;
-    /* clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%); */
-  }
-
-div .intro-left .intro-text{
+.intro-text{
     /* border: blueviolet 1px  solid; */
     padding: 10px;
-    width: 100%;
+    /* width: 100%; */
     height: 200px;
     margin: 20px;
     background-color: burlywood;
@@ -64,53 +49,46 @@ div .intro-left .intro-text{
     
 }
 
-.intro .intro-right{
-    /* background-color: burlywood; */
-    flex: 0.5;
+/* right style */ 
+
+.intro-right{
+    flex: 1;
     
 }
-.intro .intro-right .wrapper{
-    /* border: brown 1px solid; */
-    margin-top: 5em;
-    min-height: 15em;
-    margin-right: 50px;
-    padding: 20px; 
-    margin-bottom: 30em;
-    background-color: cornsilk;
-    font-weight: 20px;
-    padding: 20px;
-    margin-left: 30px;
-    position: relative;
-    opacity: .8;
-    font-size: 20px;
-    color: #ccc5b1;
-    font-family: "Arial Black", Gadget, sans-serif;
-    text-shadow: 0px 0px 0 rgb(136, 133, 125),
-                 1px 1px 0 rgb(211,149,0),
-                 2px 2px 0 rgb(133, 129, 120),
-                 3px 3px 0 rgb(182,120,0),
-                 4px 4px 0 rgb(167,105,0),
-                 5px 5px 0 rgb(152,90,0),
-                 6px 6px  0 rgb(137,75,0),
-                 7px 7px 6px rgba(0,0,0,0.68),
-                 7px 7px 1px rgba(0,0,0,0.5),
-                 0px 0px 6px rgba(0,0,0,.2);
-     clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+
+.intro_title_container{
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px 0px rgba(110, 106, 106, 0.75);
+  height: 250px;
+  width: 90%;
+  /* font-family: 'arial black'; */
+	/* text-align: center; */
+  padding: 10px;
+	margin-left: 50%;
+	transform: translateX(-200%);
+	animation: slide-in-anim 1.5s ease-out forwards;
+
 }
-    
-    
 
-
+@keyframes slide-in-anim {
+	20% {
+		opacity: 0;
+	}
+	60% {
+		transform: translateX(-45%);
+	}
+	75% {
+		transform: translateX(-52%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(-50%);
+	}
+}
  .wrapper h2{
     font-size: 50px;
 }
-
-.wrapper a i{
-    position: absolute;
-    bottom: 10px;
-    font-size: 50px;
-}
-
 
 .wrapper .typing-demo{
     width: 22ch;
@@ -120,6 +98,7 @@ div .intro-left .intro-text{
     border-right: 3px solid;
     font-family: monospace;
     font-size: 2em;
+    background-color: white;
 }
 
 
@@ -135,3 +114,23 @@ div .intro-left .intro-text{
     }
   }
 
+/* ********* */
+
+@media screen and (max-width: 480px) {
+  .intro {
+     flex-direction: column;
+     height: 80vh;
+  }
+  .imgContainer{
+    height: 300px;
+  }
+  .wrapper .typing-demo{
+    font-size: 1.5em;
+  }
+  .intro_title_container{
+    font-size: 13px;
+    height: 270px;
+  }
+
+
+}
