@@ -23,18 +23,15 @@ export default function App() {
         </div>
         <hr />
         <div className="sections">
-          <Intro />
+          <Intro className="section" />
           <hr />
-          <About />
+          <About className="section" />
           <hr />
-          {/* <Portfolio />
-          <hr /> */}
-
-          <Products />
+          <Products className="section" />
           <hr />
-          <Contact />
+          <Contact className="section" />
           <hr />
-          <Footer />
+          <Footer className="section" />
         </div>
       </div>
     </div>

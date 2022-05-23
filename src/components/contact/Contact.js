@@ -31,7 +31,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="contact">
+    <div className="contact" id="contact">
       <div className="c_left">
         <div className="left_container">
           <h3 className="address_title">
@@ -56,8 +56,8 @@ export default function Contact() {
       <div className="c_right">
         <div className="right_container">
           <p className="form_title">
-            <b>what's your story?</b> Get in touch Always available for
-            freelancing if the right project comes along me
+            <b>what's your story?</b> Get in touch Always available for the
+            right project comes along me
           </p>
 
           <form ref={formRef} className="form_control" onSubmit={handleSubmit}>

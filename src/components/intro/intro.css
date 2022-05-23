@@ -16,26 +16,24 @@
     flex: 1;
     /* border: 1px solid rgb(226, 206, 206); */
     border-radius: 10px;
+    max-height: 80%;
+    width: 100%;
 }
 
 .imgContainer{
-
-    padding: 10px;
-    width: 90%;
-    height: 500px;
-    margin: 20px;
-    background-color: burlywood;
-    border-radius: 50%;
-    background-image: url('../../img_container/myPhoto.jpg');
-    transition: 1.5s;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+  margin-top: 30px;
+  border: 3px solid rgb(211, 178, 178);
+  object-fit: contain;
+   
     /* border: rgb(204, 54, 54) 3px solid; */
-    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
-  
+    clip-path: polygon(0 0, 100% 20%, 100% 100%, 13% 81%);
      transition: 1.5s; 
 }
+
 
 .intro-text{
     /* border: blueviolet 1px  solid; */
@@ -119,17 +117,24 @@
 @media screen and (max-width: 480px) {
   .intro {
      flex-direction: column;
-     height: 80vh;
+     max-height: 90vh;
+  }
+  .intro-right{
+    height: 90%;
+  }
+
+  .intro-left{
+    height: 90%;
   }
   .imgContainer{
-    height: 300px;
+    height: 350px;
   }
   .wrapper .typing-demo{
     font-size: 1.5em;
   }
   .intro_title_container{
     font-size: 13px;
-    height: 270px;
+    max-height: 230px;
   }
 
 

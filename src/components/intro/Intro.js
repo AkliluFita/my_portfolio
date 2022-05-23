@@ -1,12 +1,13 @@
 import React from "react";
 import "./intro.css";
+import img1 from "../../img_container/my_pi.png";
 
 function Intro() {
   return (
-    <div className="intro">
+    <div className="intro" id="intro">
       {/* left */}
       <div className="intro-left">
-        <div className="imgContainer  "></div>
+        <img src={img1} alt="" className="imgContainer" />
       </div>
       {/* right */}
       <div className="intro-right">
