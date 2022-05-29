@@ -1,5 +1,5 @@
 .products{
-    height: 180vh;
+    min-height: 210vh;
     background-color: rgba(247, 244, 239, 0.885);
     /* padding: 10px; */
     display: flex;
@@ -112,7 +112,7 @@ height: 100%;
 @media screen and (max-width: 480px) {
    
     .products{
-        height: 200vh;
+        min-height: 185vh;
     }
    .pro-container{
        align-items: center;

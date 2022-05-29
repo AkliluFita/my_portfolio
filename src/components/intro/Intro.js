@@ -29,6 +29,15 @@ function Intro() {
               professional full-stack developer such as PHP, python, java, and
               relational Database (like MySql and Postgresql) as well.
             </p>
+            <a
+              className="download_link"
+              href="https://www.docdroid.net/VJhMesq/aklilu-cv-ap-pdf"
+              rel="noopener noreferrer"
+              // download
+              target="_blank"
+            >
+              Look at my CV
+            </a>
           </div>
         </div>
 

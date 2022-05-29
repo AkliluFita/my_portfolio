@@ -23,6 +23,8 @@ function Products() {
             <div className="item-contents">
               <strong>Contents:</strong>{" "}
               <p className="contents">{product.content}</p>
+              <hr />
+              <p>{product.desc}</p>
             </div>
             <div className="btn_group">
               <button className="gitBtn">

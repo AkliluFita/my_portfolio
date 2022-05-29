@@ -25,12 +25,12 @@ function About() {
           <div className="skill_text">
             <h3 className="skill_title">My Skill Lists</h3>
             <ul className="skill_desc">
-              <li>UI frame work (React Js)</li>
-              <li>css style framework(Material UI)</li>
+              <li>Js library and framework (React Js, Next.js)</li>
+              <li>css framework(Material UI, Bootstrap)</li>
               <li>state management(Redux and react Hooks/contextAPI)</li>
-              <li>Server side(node js and Django)</li>
+              <li>Backend side(node js and Django)</li>
               <li>UI Design(Figma)</li>
-              <li>Database (MongoDB, MySQL)</li>
+              <li>Database (MongoDB, MySQL and Postgres)</li>
             </ul>
           </div>
         </div>
